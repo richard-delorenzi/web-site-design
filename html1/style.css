@@ -1,0 +1,91 @@
+/*Garish colours, so that we can see what is going on*/
+nav {background-color: #999;}
+aside, #logo {background-color: #aaf;}
+footer {background-color: #afa;}
+header {background-color: #faa;}
+article {background-color: #ffa;}
+nav ul li:nth-child(2n) {background-color: #888;}
+
+body {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/62/Starsinthesky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*a little style*/
+nav, article, aside {
+    padding-right: 1ex;
+    padding-left: 1ex;
+}
+article {
+    margin: 1em;
+    max-width: 20em;
+}
+h1 {
+    text-align:center;
+}
+
+/*remove indent and bullets, from the navigation list*/
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/*hover*/
+nav li:hover {
+    font-size: 120%;
+}
+
+/*transitions*/
+footer:hover { font-size: 120%; }
+footer {
+    font-size: 50%;
+    transition: font-size 1s;
+}
+article {
+    #border: solid white 2px;
+    transition: border 1s;
+    transition: box-shadow 1s;
+}
+
+/*highlight selection*/
+article:target {
+    #border: solid red 1px;
+    box-shadow: 0px 0px 5px 5px #f77;
+}
+
+/*logo*/
+#logo * {
+    transform: rotate(-35deg) scale(1.5,1.5) translate(-1em,1.3em);
+    text-align: center;
+}
+
+/*Name the parts: for use my grid-template-areas*/
+aside        {grid-area: a;}
+nav          {grid-area: b;}
+main         {grid-area: c;}
+header       {grid-area: d;}
+footer       {grid-area: e;}
+section#logo {grid-area: f;}
+
+/*layout of page*/
+body {
+    display: grid;
+    grid-template-rows:    4em auto min-content;
+    grid-template-columns: min-content auto minmax(5em, 10%);
+    grid-template-areas:
+        "b c f"
+        "b c a"
+        "e e e";
+}
+
+/*layout of articles*/
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+article {
+    flex: 2 2 200px;
+}
