@@ -6,6 +6,7 @@ header {background-color: #faa;}
 article {background-color: #ffa;}
 nav ul li:nth-child(2n) {background-color: #888;}
 
+/*Background*/
 body::before {
     content: "";
     position: absolute;
@@ -67,6 +68,41 @@ article:target {
     transform: rotate(-35deg) scale(1.5,1.5) translate(-1em,1.3em);
     text-align: center;
 }
+
+/*quotes*/
+q { font-style:italic;}
+
+q { quotes: '“' '”' "‘" "'"; }
+q:before { content: open-quote; }
+q:after  { content: close-quote; }
+/*downgrade for ie*/
+q:before { content: '“'; }
+q:after  { content: '”'; }
+/*end ie fix*/
+
+q.single:before { content: "‘"; }
+q.single:after  { content: "'"; }
+q.tech:before   { content: '«'; }
+q.tech:after    { content: '»'; }
+q.name:before   { content: ''; }
+q.name:after    { content: ''; }
+
+/*links*/
+a { text-decoration: inherit;  }
+a:link, a.link { color:blue; }
+a:visited { color:navy; }
+a:hover   {
+    color:teal;
+    text-decoration: underline;
+}
+
+/*attachment*/
+.attachment {
+    background-image: url("images/paper.jpg");
+}
+
+/*****************************************************************/
+/*layout*/
 
 /*Name the parts: for use my grid-template-areas*/
 aside        {grid-area: a;}
