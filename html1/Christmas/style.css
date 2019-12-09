@@ -135,12 +135,12 @@ body {
 }
 
 /*layout of articles*/
-.articles {
+main {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
 }
 
-.articles + * {
+main + * {
     flex: 2 2 200px;
 }
