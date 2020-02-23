@@ -58,7 +58,7 @@ article {
 }
 
 /*highlight selection*/
-article:target {
+*:target {
     #border: solid red 1px;
     box-shadow: 0px 0px 5px 5px #f77;
 }
@@ -98,7 +98,18 @@ a:hover   {
 
 /*attachment*/
 .attachment {
-    background-image: url("images/paper.jpg");
+    background-image: url("paper.jpeg");
+}
+
+/*table*/
+
+thead {
+    font-weight: bold;
+    text-align: left;
+}
+
+table, td, th {
+    border: solid black 1px;
 }
 
 /*****************************************************************/
@@ -106,21 +117,21 @@ a:hover   {
 
 /*Name the parts: for use my grid-template-areas*/
 aside        {grid-area: a;}
-nav          {grid-area: b;}
-main         {grid-area: c;}
-header       {grid-area: d;}
-footer       {grid-area: e;}
-section#logo {grid-area: f;}
+nav          {grid-area: n;}
+main         {grid-area: m;}
+header       {grid-area: h;}
+footer       {grid-area: f;}
+section#logo {grid-area: l;}
 
 /*layout of page*/
-body.my_grid {
+body {
     display: grid;
     grid-template-rows:    4em auto min-content;
-    grid-template-columns: min-content auto minmax(5em, 10%);
+    grid-template-columns: minmax(min-content, auto) auto minmax(min-content, 10em);
     grid-template-areas:
-        "b c f"
-        "b c a"
-        "e e e";
+        "h h h"
+        "n m a"
+        "f f f";
 }
 
 /*layout of articles*/
@@ -130,6 +141,6 @@ body.my_grid {
     align-items: flex-start;
 }
 
-article {
+.articles + * {
     flex: 2 2 200px;
 }

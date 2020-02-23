@@ -68,11 +68,11 @@
       
       /*Name the parts: for use my grid-template-areas*/
       aside        {grid-area: a;}
-      nav          {grid-area: b;}
-      main         {grid-area: c;}
-      header       {grid-area: d;}
-      footer       {grid-area: e;}
-      section#logo {grid-area: f;}
+      nav          {grid-area: n;}
+      main         {grid-area: m;}
+      header       {grid-area: h;}
+      footer       {grid-area: f;}
+      section#logo {grid-area: l;}
 
       /*layout of page*/
       body {
@@ -80,9 +80,9 @@
           grid-template-rows:    4em auto min-content;
           grid-template-columns: min-content auto minmax(5em, 10%);
           grid-template-areas:
-            "d d f"
-            "b c a"
-            "e e e";
+            "h h l"
+            "n m a"
+            "f f f";
       }
 
       /*layout of articles*/
