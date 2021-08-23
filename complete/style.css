@@ -64,14 +64,3 @@ article {
     transform: rotate(-35deg) scale(1.5,1.5) translate(-1em,1.3em);
     text-align: center;
 }
-
-/*margins padding etc*/
-nav, article, aside {
-    padding-right: 1ex;
-    padding-left: 1ex;
-}
-
-article {
-    margin: 1em;
-    max-width: 20em;
-}
