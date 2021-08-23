@@ -1,0 +1,34 @@
+  /*Name the parts: for use my grid-template-areas*/
+  aside    {grid-area: a;} 
+  nav      {grid-area: n;}
+  main     {grid-area: m;}
+  header   {grid-area: h;}
+  footer   {grid-area: f;}
+  #logo    {grid-area: l;}
+
+  /*layout of page*/
+  body {
+      display: grid; 
+      grid-template-areas:
+        "h h l"
+        "n m a"
+        "f f f";
+  }
+
+  /*sizes*/
+  body {
+      grid-template-rows:    4em auto min-content;
+      grid-template-columns: min-content auto minmax(5em, 10%);
+  }
+
+  /*layout of articles*/
+  main {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+  }
+
+  article {
+      flex-basis: 200px;
+      flex-grow: 2;
+  }

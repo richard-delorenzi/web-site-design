@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <!-- title is what is shown in the tab -->
+    <title>The Solar System</title>
+
+    <!-- these links load the stylesheets.
+         one for style, and one for layout
+         MS-Windows often hides the bit after the .
+         so you won't see .css in file-explorer.
+         -->
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="layout.css"/>
+    <meta charset="UTF-8"\>
+    <!--<meta http-equiv="refresh" content="1"/>-->
+  </head>
+
+  <body>
+
+    <!-- nav is the navigation section
+         this is where we put the menu.
+         If we click then we are taken to the article.
+         But only if the code has been added -->
+    <nav>
+      <p>click one 🡓</p>
+      <ul>
+        <li>Mercury</li>
+        <li><a href="#Venus">Venus</a></li>
+        <li><a href="#Earth">Earth</a></li>
+        <li><a href="#Mars">Mars</a></li>
+        <li>Jupiter</li>
+        <li>Saturn</li>
+        <li>Uranus</li>
+        <li>Neptune</li>
+        <li class="upsidedown">
+          <a href="#Gravity">Gravity</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- it looks like this is some sort of header -->
+    <header>
+      <h1>The Solar System</h1>
+    </header>
+
+    <!-- an aside, is when you say something a,
+         bit extra. For those that want more detail. -->
+    <aside>
+      <h2>Space</h2>
+      <p>
+        Space is big. You just won't believe how vastly,
+        hugely, mind-bogglingly big it is. I mean,
+        you may think it's a long way down the road
+        to the chemist, but that's just peanuts to space.
+      </p>
+    </aside>
+
+    <!-- main is where the main content should go
+         I put all my articles in here -->
+    <main>
+      <!-- articles: we can have more than one article.
+           I have one for each planet.
+      -->
+      <article id="Earth">
+        <h2>Earth</h2>
+        <p>
+          This is your home, it’s the only one you’ve got.
+          Saturn is pretty, but you can’t live there, you can’t even get there.
+          So, I repeat, this is your home.
+          It’s the only one you’ve got.
+          Cherish it, protect it, it’s the only one you’re gonna get.
+          These guys, they’re your neighbors, they ain’t goin’ away, they ain’t leavin’.
+          You have to get along with them, so you have to learn to share.
+          You have to get along, you have to learn to get along.
+          Because they are your neighbors, they’re not goin’ away.
+          Okay, all this stuff—
+          The animals, the water, the sky, the ground, the bugs, the fish, the tacos, the people—
+          They’re all connected; Everything is connected.
+          They all depend on one another.
+          If you ignore that, you’re doomed, repeat, doomed.
+          OK, So, listen up: it’s all one,
+          Not two worlds, not three; one, just one.
+          So get in gear.
+          Remember, all is one.
+        </p>
+
+        <h3>Life on Earth</h3>
+        <p>
+          Earth contains life, some people think it contains
+          intelligent life. However this is yet to be
+          independently verified.
+        </p>
+      </article>
+
+      <article id="Mars">
+        <h2>Mars</h2>
+        <p>
+          Sometimes close. But even the moon is a long
+          way when the direction is up.
+        </p>
+      </article>
+
+       <article id="Gravity">
+        <h2>Gravity</h2>
+        <p>
+          Keeps you grounded.
+        </p>
+      </article>
+    </main>
+
+    <!-- A footer, usually goes at the bottom.
+         It has stuff like copyright notices,
+         and stuff that you don't want to read much -->
+    <footer>
+      ©2019 Mr D — Licence
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+        CC-BY-SA
+      </a>
+    </footer>
+
+    <section id="logo">
+      <div>Don't panic</div>
+    </section>
+
+  </body>
+</html>
