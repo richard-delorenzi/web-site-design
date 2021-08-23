@@ -21,6 +21,8 @@ body {
 body {
     grid-template-rows:    4em auto min-content;
     grid-template-columns: min-content auto minmax(5em, 10%);
+    //grid-template-columns: minmax(min-content,10%) auto minmax(5em, 10%);
+    //grid-template-columns: minmax(min-content,min(10em,10%)) auto minmax(5em, 10%);
 }
 
 /*layout of articles*/
@@ -46,7 +48,12 @@ article {
     max-width: 20em;
 }
 
+body {
+    //margin: 0ex;
+}
 
+/*****************************************************/
+/*respond to narrow screens: different layouts*/
 @media all and (max-width: 320px){
     body {
         grid-template-areas:
@@ -55,6 +62,8 @@ article {
             "f f l";
     }
 }
+
+/*too narrow: turn off grid*/
 @media all and (max-width: 280px){
     body {
         display: block;
