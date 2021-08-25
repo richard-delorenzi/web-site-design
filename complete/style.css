@@ -1,12 +1,3 @@
-/*Garish colours, so that we can see what is going on*/
-nav {background-color: #aaa;}
-aside {background-color: #fff;}
-footer {background-color: #afa;}
-header {background-color: #faa;}
-article {background-color: #ffa;}
-#logo {background-color: #aaa;}
-nav ul li:nth-child(2n) {background-color: #888;}
-
 /*no serifs in headings */
 h1, h2, h3, h4, h5, h6, h7, h8 {
     font-family: Sans-Serif;
@@ -35,6 +26,15 @@ nav ul {
     list-style-type: none;
     padding-left: 0;
 }
+
+/*Garish colours, so that we can see what is going on*/
+nav {background-color: #aaa;}
+aside {background-color: #fff;}
+footer {background-color: #afa;}
+header {background-color: #faa;}
+article {background-color: #ffa;}
+#logo {background-color: #aaa;}
+nav ul li:nth-child(2n) {background-color: #888;}
 
 /*background*/
 body {
