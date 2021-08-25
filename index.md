@@ -1,2 +1,2 @@
-- [Basic HTML](comlpete)
+- [Basic HTML](comlpete).
 - Complete
