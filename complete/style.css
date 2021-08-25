@@ -15,6 +15,11 @@ h1 {
     text-align:center;
 }
 
+em {
+    color: red;
+    font: inherit;
+}
+
 /*hover*/
 nav ul li:hover {
     background-color: #fff;
