@@ -20,16 +20,16 @@ body {
 /*sizes*/
 body {
     grid-template-rows:    4em auto min-content;
-    grid-template-columns: min-content auto minmax(5em, 10%);
+    //grid-template-columns: min-content auto minmax(5em, 10%);
     //grid-template-columns: minmax(min-content,10%) auto minmax(5em, 10%);
-    //grid-template-columns: minmax(min-content,min(10em,10%)) auto minmax(5em, 10%);
+    grid-template-columns: minmax(min-content,min(10em,10%)) auto minmax(5em, 10%);
 }
 
 /*layout of articles*/
 main {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    //align-items: flex-start;
 }
 
 article {
