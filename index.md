@@ -1,2 +1,2 @@
-- Basic HTML
+- [Basic HTML](Basic-HTML/page.html)
 - [Complete](complete/page.html)
