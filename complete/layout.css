@@ -25,25 +25,25 @@ body {
     grid-template-columns: minmax(min-content,min(10em,10%)) auto minmax(5em, 10%);
 }
 
-/*layout of articles*/
+/*layout of sections*/
 main {
     display: flex;
     flex-wrap: wrap;
     //align-items: flex-start;
 }
 
-article {
+section {
     flex-basis: 200px;
     flex-grow: 2;
 }
 
 /*margins padding etc*/
-nav, article, aside {
+nav, section, aside {
     padding-right: 1ex;
     padding-left: 1ex;
 }
 
-article {
+section {
     margin: 1em;
     max-width: 20em;
 }
