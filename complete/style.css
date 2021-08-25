@@ -1,7 +1,14 @@
+/*mostly serifs*/
+body {
+    font-family: Serif;
+}
+
 /*no serifs in headings */
 h1, h2, h3, h4, h5, h6, h7, h8 {
     font-family: Sans-Serif;
+    color: green;
 }
+
 h1 {
     text-align:center;
 }
@@ -71,7 +78,7 @@ article {
 }
 
 #logo p:hover {
-    //transform: rotate(+35deg) scale(2.0,2.0) translate(0.5em,1.0em);
-    //background-color: red;
-    //transition: background-color 10s, transform 1s;
+    %transform: rotate(+35deg) scale(2.0,2.0) translate(0.5em,1.0em);
+    %background-color: red;
+    %transition: background-color 10s, transform 1s;
 }
