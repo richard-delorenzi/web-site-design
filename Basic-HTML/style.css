@@ -18,6 +18,12 @@ em {
     font: inherit;
 }
 
+/*Garish colours, so that we can see what is going on*/
+nav {background-color: #aaa;}
+footer {background-color: #afa;}
+main {background-color: #ffa;}
+nav ul li:nth-child(2n) {background-color: #888;}
+
 /*hover*/
 nav ul li:hover {
     background-color: #fff;
@@ -33,12 +39,6 @@ nav ul {
     list-style-type: none;
     padding-left: 0;
 }
-
-/*Garish colours, so that we can see what is going on*/
-nav {background-color: #aaa;}
-footer {background-color: #afa;}
-main {background-color: #ffa;}
-nav ul li:nth-child(2n) {background-color: #888;}
 
 /*background*/
 %body {
@@ -78,4 +78,11 @@ article {
     %transform: rotate(+35deg) scale(2.0,2.0) translate(0.5em,1.0em);
     %background-color: red;
     %transition: background-color 10s, transform 1s;
+}
+
+/* a bit of layout. More next time*/
+nav {
+    max-width: 40em;
+    min-width: min-content;
+    width: 50%;
 }
