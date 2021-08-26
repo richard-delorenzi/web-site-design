@@ -18,11 +18,6 @@ em {
     font: inherit;
 }
 
-/*hover*/
-nav ul li:hover {
-    background-color: #fff;
-}
-
 /*highlight selection*/
 section:target {
     %border: double green;
@@ -43,6 +38,12 @@ header {background-color: #faa;}
 section {background-color: #ffa;}
 #logo {background-color: #aaa;}
 nav ul li:nth-child(2n) {background-color: #888;}
+nav ul li {background-color: #999;}
+
+/*hover — has to go after nav ul li:nth-child(2n), to override, as rules are both equal specificity*/
+nav ul li:hover {
+    background-color: #fff;
+}
 
 /*background*/
 body {
