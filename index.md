@@ -1,5 +1,6 @@
 # Sample web-pages
-- [Basic HTML](Basic-HTML/page.html)
+- [Basic HTML initial](Basic-HTML/page.html)
+- [Basic HTML complete](Basic-HTML/complete-page.html)
 - [Complete with layout](complete/page.html)
 - [Christmas](Christmas/page.html)
 
