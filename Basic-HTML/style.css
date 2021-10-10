@@ -86,3 +86,8 @@ nav {
     min-width: min-content;
     width: 50%;
 }
+
+/*highlight selection*/
+*:target, *:target + * {
+    background-color: yellow;
+}
