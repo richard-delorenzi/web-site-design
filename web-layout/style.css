@@ -1,0 +1,53 @@
+/*Garish colours, so that we can see what is going on*/
+nav {background-color: #999;}
+aside {background-color: #aaf;}
+footer {background-color: #afa;}
+header {background-color: #faa;}
+article {background-color: #ffa;}
+nav ul li:nth-child(2n) {background-color: #888;}
+
+/*a little style*/
+nav, article, aside {
+    padding-right: 1ex;
+    padding-left: 1ex;
+}
+article {
+    margin: 1em;
+    max-width: 20em;
+}
+h1 {
+    text-align:center;
+}
+
+/*remove indent and bullets, from the navigation list*/
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/*hover*/
+nav li:hover {
+    font-size: 120%;
+}
+
+/*transitions*/
+footer:hover { font-size: 300%; }
+footer {
+    font-size: 50%;
+    transition: font-size 1s;
+}
+article {
+    border: solid white 1px;
+    transition: border 1s;
+}
+
+/*highlight selection*/
+article:target {
+    border: solid black 1px;
+}
+
+/*logo*/
+#logo * {
+    transform: rotate(-35deg) scale(1.5,1.5) translate(-1em,1.3em);
+    text-align: center;
+}
