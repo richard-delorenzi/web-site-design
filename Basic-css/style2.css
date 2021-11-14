@@ -4,7 +4,6 @@ body {
 }
 
 img {
-    border-radius: 16px;
     max-width: 500px;
 }
 
@@ -47,13 +46,6 @@ article:target {
 nav ul {
     list-style-type: none;
     padding-left: 0;
-}
-
-/*background*/
-%body {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/62/Starsinthesky.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 /*transitions*/
