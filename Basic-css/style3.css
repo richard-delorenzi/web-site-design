@@ -10,14 +10,14 @@ img {
 
 /*Garish colours, so that we can see what is going on*/
 nav {background-color: #aaa;}
-footer {background-color: #afa;}
-main {background-color: #ffa;}
+footer {background-color: #aff;}
+main {background-color: #fcc;}
 nav ul li:nth-child(2n) {background-color: #888;}
 
 /*no serifs in headings */
 h1, h2, h3, h4, h5, h6, h7, h8 {
     font-family: Sans-Serif;
-    color: green;
+    color: purple;
 }
 
 h1 {
@@ -50,7 +50,7 @@ nav ul {
 }
 
 /*background*/
-%body {
+body {
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/62/Starsinthesky.jpg");
     background-repeat: no-repeat;
     background-size: cover;
