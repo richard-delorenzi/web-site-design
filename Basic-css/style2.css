@@ -53,10 +53,6 @@ footer {
     font-size: 50%;
     transition: font-size 1s;
 }
-article {
-    border: solid white;
-    transition: border 1s;
-}
 
 .upsidedown {
     transform: rotate(180deg);
@@ -72,12 +68,6 @@ article {
 #logo * {
     transform: rotate(-35deg) scale(1.0,1.0) translate(-1em,0.5em);
     text-align: center;
-}
-
-#logo p:hover {
-    %transform: rotate(+35deg) scale(2.0,2.0) translate(0.5em,1.0em);
-    %background-color: red;
-    %transition: background-color 10s, transform 1s;
 }
 
 /* a bit of layout. More next time*/
