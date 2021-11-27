@@ -1,0 +1,10 @@
+/*Name the parts: for use my grid-template-areas*/
+aside    {grid-area: a;}
+nav      {grid-area: b;}
+main     {grid-area: c;}
+header   {grid-area: d;}
+footer   {grid-area: e;}
+
+/*layout of page*/
+
+/*layout of articles*/
