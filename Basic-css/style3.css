@@ -1,0 +1,86 @@
+/*mostly serifs*/
+body {
+    font-family: Serif;
+}
+
+img {
+    border-radius: 16px;
+    max-width: 500px;
+}
+
+/*Garish colours, so that we can see what is going on*/
+nav {background-color: #aaa;}
+footer {background-color: #aff;}
+main {background-color: #fcc;}
+nav ul li:nth-child(2n) {background-color: #888;}
+
+/*no serifs in headings */
+h1, h2, h3, h4, h5, h6, h7, h8 {
+    font-family: Sans-Serif;
+    color: purple;
+}
+
+h1 {
+    text-align:left;
+}
+
+em {
+    color: red;
+    font: inherit;
+}
+
+body {
+    max-width: 80ex; /*ex or em or % max-width or width*/
+}
+
+/*hover*/
+nav ul li:hover {
+    background-color: #fff;
+}
+
+/*highlight selection*/
+article:target {
+    border: double black;
+}
+
+/*remove indent and bullets, from the navigation list*/
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/*background*/
+body {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/62/Starsinthesky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*transitions*/
+footer:hover { font-size: 300%; }
+footer {
+    font-size: 50%;
+    transition: font-size 1s;
+}
+
+.upsidedown {
+    transform: rotate(180deg);
+    transition: transform 2s;
+}
+
+.upsidedown:hover {
+    transform: rotate(0deg);
+    transition: transform 0s;
+}
+
+/* a bit of layout. More next time*/
+nav {
+    max-width: 40em;
+    min-width: min-content;
+    width: 50%;
+}
+
+/*highlight selection*/
+*:target, *:target + * {
+    background-color: yellow;
+}
