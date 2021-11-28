@@ -1,35 +1,7 @@
-/*Name the parts: for use my grid-template-areas*/
-aside    {grid-area: a;} 
-nav      {grid-area: n;}
-main     {grid-area: m;}
-header   {grid-area: h;}
-footer   {grid-area: f;}
-#logo    {grid-area: l;}
-
-
-/*layout of page*/
-body {
-    display: grid; 
-    grid-template-areas:
-        "h h l"
-        "n m a"
-        "f f f";
-}
-
-
-/*sizes*/
-body {
-    grid-template-rows:    4em auto min-content;
-    //grid-template-columns: min-content auto minmax(5em, 10%);
-    //grid-template-columns: minmax(min-content,10%) auto minmax(5em, 10%);
-    grid-template-columns: minmax(min-content,min(10em,10%)) auto minmax(5em, 10%);
-}
-
 /*layout of sections*/
 main {
     display: flex;
     flex-wrap: wrap;
-    //align-items: flex-start;
 }
 
 section {
@@ -48,24 +20,25 @@ section {
     max-width: 20em;
 }
 
-body {
-    //margin: 0ex;
-}
-
-/*****************************************************/
-/*respond to narrow screens: different layouts*/
-@media all and (max-width: 320px){
+/*too narrow: reduce margin*/
+@media (max-width: 200px) {
     body {
-        grid-template-areas:
-            "h h h"
-            "n m a"
-            "f f l";
+        margin: 0em;
     }
 }
 
-/*too narrow: turn off grid*/
-@media all and (max-width: 280px){
-    body {
-        display: block;
+/*very narrow: reduce margin*/
+@media (max-width: 150px) {
+    section {
+        margin:  0em;
+        padding: 0em;
+    }
+}
+
+/*very narrow: reduce margin*/
+@media (max-width: 100px) {
+    section, nav, aside, * {
+        margin: 0em;
+        padding: 0em;
     }
 }
