@@ -1,0 +1,36 @@
+/*Name the parts: for use my grid-template-areas*/
+aside    {grid-area: a;} 
+nav      {grid-area: n;}
+main     {grid-area: m;}
+header   {grid-area: h;}
+footer   {grid-area: f;}
+#logo    {grid-area: l;}
+
+
+/*layout of page*/
+body {
+    display: grid; 
+    grid-template-areas:
+        "h h l"
+        "n m a"
+        "f f f";
+}
+
+
+/*****************************************************/
+/*respond to narrow screens: different layouts*/
+@media all and (max-width: 320px){
+    body {
+        grid-template-areas:
+            "h h h"
+            "n m a"
+            "f f l";
+    }
+}
+
+/*too narrow: turn off grid*/
+@media all and (max-width: 280px){
+    body {
+        display: block;
+    }
+}
