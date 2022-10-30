@@ -38,11 +38,6 @@ nav ul li:hover {
     background-color: #fff;
 }
 
-/*highlight selection*/
-article:target {
-    border: double black;
-}
-
 /*remove indent and bullets, from the navigation list*/
 nav ul {
     list-style-type: none;
@@ -83,4 +78,5 @@ nav {
 /*highlight selection*/
 *:target, *:target + * {
     background-color: yellow;
+    border: double black;
 }
