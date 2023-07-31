@@ -1,6 +1,8 @@
 # Sample web-pages
-- [Basic HTML initial](3-Basic-HTML/page.html)
-- [Basic HTML complete](3-Basic-HTML/complete-page.html)
+- [Simple html initial:to do done by student](1-Simple_HTML/page.html)
+- [Basic HTML initial:to do done by student](2-Basic-HTML/page.html)
+- [Basic HTML complete](2-Basic-HTML/complete-page.html)
+- [Basic css complete](3-Basic-css/complete-page.html)
 - [With layout](4-web-layout/web-layout.html)
 
 # Copyright and project home
