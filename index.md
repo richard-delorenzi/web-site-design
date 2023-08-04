@@ -37,7 +37,7 @@ Now go to the [Project page](https://github.com/richard-delorenzi/web-site-desig
 ### Simple `HTML`
 When you have downloaded the site, go into `1-Simple_HTML` (use a file explorer to do this). Open your text editor (`notepad++`), and drag the file into it. The code will appear in front of you. Then drag the file into your web-browser. You will see the ½ finished site. 
 
-Your job is to fix the page: the writer got mixed up, and did some of it in `markdown` you need to convert to `HTML`. You can find examples of everything that you need on the page.
+Your job is to fix the page: the writer got mixed up, and did some of it in `markdown` you need to convert to `HTML`. You can find examples of everything that you need on the page. **After every change click save in the editor, and click the re-load button in the browser, or press <kbd>F5</kbd>** 
 
 What you will know by the end of the lesson:
 
@@ -63,7 +63,26 @@ When you have done, find out how to: (w3-schools may be of help)
 
 ### Basic css
 You know the drill, but this time it is the directory `3-Basic-css`.
-The only
+The only line to edit is the line `<link rel="stylesheet" href="style2.css"/>`. After seeing what the page looks like in the browser, change the `2` to a `3`.
+
+You just changed the style of the page, by changing the name of the style file.
+
+If using MS-Windows, then tell you file-manager to show file-extensions (probably under view).
+
+Now drag `style3.html` into the editor. This time we are making changes to the style. Don't forget to save and reload the browser after every change.
+
+Your tasks:
+
+* Change the image size
+* Change the colour of the background (warning colour has to be spelt wrong) (warning it does not know every colour name, but it knows a lot. You can look them up).
+* Change the colour of the headings
+* Make heading-1 aligned to the centre
+* Make the max width smaller
+* Make the max width bigger
+* Change the background image
+* Change the colours of the stripy table of content
+* Find out what is wrong with gravity
+
 
 🚧Under construction: not finished🚧
 
