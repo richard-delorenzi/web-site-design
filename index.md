@@ -90,7 +90,7 @@ One is the style, like you have seen before. Make a small change like you did la
 
 The second and third are layout styles. The third (`layout-grid.css` sets up the grid. The second (`layout.css`) controls how the articles are laid out. You can explore it, make changes, look stuff up, etc. Or ask questions.
 
-🚧Under construction: not finished🚧
+🚧This section will not be finished: you have to learn for you self.🚧
 
 # Copyright
 The files are copyright, and have a GPL licence. You can use them, edit your own copy, give copies to friends, but you must tell them that the licence also lets them do the same.
