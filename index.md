@@ -83,6 +83,12 @@ Your tasks:
 * Change the colours of the stripy table of content
 * Find out what is wrong with gravity
 
+### Web Layout (extra stuff for when you get good)
+This time the directory is `4-web-design`. When you look at `web-layout.html` you will notice that it includes 3 style sheets (3 files).
+
+One is the style, like you have seen before. Make a small change like you did last time, to remind you how.
+
+The second and third are layout styles. The third (`layout-grid.css` sets up the grid. The second (`layout.css`) controls how the articles are laid out. You can explore it, make changes, look stuff up, etc. Or ask questions.
 
 🚧Under construction: not finished🚧
 
