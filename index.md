@@ -47,7 +47,7 @@ What you will know by the end of the lesson:
 * What a start tag looks like `<…>`.
 * What an end tag looks like `</…>`.
 
-###Basic HTML
+### Basic HTML
 You have already downloaded everything (don't do that again).
 Go into `2-Basic_HTML` (use a file explorer to do this). Open your text editor (`notepad++`), and drag the file into it. The code will appear in front of you. Then drag the file into your web-browser. You will see the ½ finished site.
 
