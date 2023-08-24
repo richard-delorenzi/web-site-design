@@ -53,7 +53,7 @@ Go into `2-Basic_HTML` (use a file explorer to do this). Open your text editor (
 
 Your job is to fix the page: the writer got mixed up, and did some of it in `markdown` you need to convert to `HTML`. You can find examples of everything that you need on the page.
 
-This time you will so a little structure, including code to add style (it reads it from a file, we will ignore it until next lesson).
+This time you will see a little structure, including code to add style (it reads it from a file, we will ignore it until next lesson).
 
 When you have done, find out how to: (w3-schools may be of help)
 
